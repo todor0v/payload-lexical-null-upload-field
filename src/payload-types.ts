@@ -143,7 +143,7 @@ export interface Media {
 export interface Page {
   id: string;
   slug: string;
-  lexicalText?: {
+  lexicalText: {
     root: {
       type: string;
       children: {
@@ -157,7 +157,7 @@ export interface Page {
       version: number;
     };
     [k: string]: unknown;
-  } | null;
+  };
   updatedAt: string;
   createdAt: string;
 }
