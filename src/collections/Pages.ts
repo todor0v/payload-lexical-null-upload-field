@@ -13,5 +13,9 @@ export const Pages: CollectionConfig = {
       type: 'text',
       required: true,
     },
+    {
+      name: 'lexicalText',
+      type: 'richText',
+    },
   ],
 }
