@@ -143,7 +143,6 @@ export interface Media {
 export interface Page {
   id: string;
   slug: string;
-  text: string;
   lexicalText?: {
     root: {
       type: string;
@@ -288,7 +287,6 @@ export interface MediaSelect<T extends boolean = true> {
  */
 export interface PagesSelect<T extends boolean = true> {
   slug?: T;
-  text?: T;
   lexicalText?: T;
   updatedAt?: T;
   createdAt?: T;
